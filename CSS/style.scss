@@ -1,0 +1,143 @@
+
+@import '_mixins.scss';
+@import '_variables.scss';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: $fontFam, sans-serif;
+    font-size: $bodyFontSize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $lightGrayishBlue;
+    padding: 20px;
+  }
+  
+  #articlePreview {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 730px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  #articleImg img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #articleText {
+    padding: 20px;
+  }
+  
+  #articleText h3 {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: $veryDarkGrayishBlue;
+  }
+  
+  #articleText p {
+    font-size: 16px;
+    color: $desaturatedDarkBlue;
+  }
+  
+  #articleProfile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  
+  #articleProfile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  #profileBtn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #profileBtn img {
+    padding: 9px;
+    width: auto;
+    border-radius: 100%;
+    background-color: $lightGrayishBlue;
+}
+  
+  #shareSection {
+    display: none;
+    align-items: center;
+    background: $veryDarkGrayishBlue;
+    position: sticky;
+    padding: 30px;
+    color: $grayishBlue;
+    gap: 1em;
+    width: 100%;
+ 
+}
+
+  
+  #shareSection h4 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  #iconsImg img {
+    width: auto;
+    margin-right: 15px;
+  }
+  
+  #closeShareBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-left: auto;
+  }
+  
+  #closeShareBtn img {
+    padding: 9px;
+    width: auto;
+    border-radius: 100%;
+    background-color: $desaturatedDarkBlue;
+}
+  .hidden {
+    display: block;
+  }
+  /* Show on larger screens */
+  @media (min-width: 768px) {
+    #articlePreview {
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    #articleText {
+      padding: 20px 30px;
+    }
+  
+    #articleProfile {
+      padding: 20px 30px;
+    }
+  }
+  
+  /* Utility classes */
+  .hidden {
+    display: none;
+  }
+  

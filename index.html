@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
+  <title>Frontend Mentor | Article Preview Component</title>
+</head>
+<body>
+  <div id="articlePreview">
+    <div id="articleImg">
+      <img src="/images/drawers.jpg" alt="Furniture drawers image">
+    </div>
+    <div id="articleText">
+      <h3>
+        Shift the overall look and feel by <br>
+        adding these wonderful touches <br>
+        to furniture in your home
+      </h3>
+      <p>
+        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+      </p>
+    </div>
+    <div id="articleProfile">
+      <img src="/images/avatar-michelle.jpg" alt="Profile picture of Michelle Appleton">
+      <div>
+        <h4>Michelle Appleton</h4>
+        <p>28 Jun 2020</p>
+      </div>
+      <button id="profileBtn">
+        <img src="/images/icon-share.svg" alt="Share Icon">
+      </button>
+    </div>
+    <!-- Hidden by default, shown on button click -->
+    <div id="shareSection" class="hidden">
+      <h4>SHARE</h4>
+      <div id="iconsImg">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="/images/icon-facebook.svg" alt="Share on Facebook">
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img src="/images/icon-twitter.svg" alt="Share on Twitter">
+        </a>
+        <a href="https://www.pinterest.com/" target="_blank">
+          <img src="/images/icon-pinterest.svg" alt="Share on Pinterest">
+        </a>
+      </div>
+      <button id="closeShareBtn">
+        <img src="/images/icon-share.svg" alt="Close Share">
+      </button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
