@@ -1,64 +1,58 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--META-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="CSS/style.css">
+  <!--CSS LINKS-->
+  <link rel="stylesheet" href="/CSS/style.css">
+  <!--JS LINKS-->
+  <script defer src="index.js"></script>
+  <!--FONT LINKS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <script defer src="index.js"></script>
-  <title>Frontend Mentor | Article Preview Component</title>
+  <!--TITLE-->
+  <title>Article Preview Component</title>
 </head>
 <body>
+  <!--Article Preview Container-->
   <div id="articlePreview">
+    <!--Article Image-->
     <div id="articleImg">
-      <img src="/images/drawers.jpg" alt="Furniture drawers image">
+      <img src="images/drawers.jpg" alt="A picture of a drawer">
     </div>
-    <div id="articleText">
-      <h3>
-        Shift the overall look and feel by <br>
+    <!--Article Text-->
+    <div id="articleTxt">
+      <h4>Shift the overall look and feel by <br>
         adding these wonderful touches <br>
-        to furniture in your home
-      </h3>
+        to your furniture in your home
+      </h4>
       <p>
-        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I've got some simple tips
+        to help you make any room feel complete.
       </p>
     </div>
+    <!--Article Profile-->
     <div id="articleProfile">
-      <img src="/images/avatar-michelle.jpg" alt="Profile picture of Michelle Appleton">
-      <div>
+      <img src="images/avatar-michelle.jpg" alt="A profile picture of Michelle Appleton" id="profileImg">
+      <div id="profileTxt">
         <h4>Michelle Appleton</h4>
         <p>28 Jun 2020</p>
       </div>
-      <button id="profileBtn">
-        <img src="/images/icon-share.svg" alt="Share Icon">
+      <button id="share">
+        <img src="images/icon-share.svg" alt="Share">
       </button>
     </div>
-    <!-- Hidden by default, shown on button click -->
-    <div id="shareSection" class="hidden">
+    <!--Share hidden-->
+    <div id="shareHidden">
       <h4>SHARE</h4>
-      <div id="iconsImg">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="/images/icon-facebook.svg" alt="Share on Facebook">
-        </a>
-        <a href="https://www.twitter.com/" target="_blank">
-          <img src="/images/icon-twitter.svg" alt="Share on Twitter">
-        </a>
-        <a href="https://www.pinterest.com/" target="_blank">
-          <img src="/images/icon-pinterest.svg" alt="Share on Pinterest">
-        </a>
+      <div id="socialIcons">
+        <img src="images/icon-facebook.svg" alt="Facebook">
+        <img src="images/icon-twitter.svg" alt="Twitter">
+        <img src="images/icon-pinterest.svg" alt="Pinterest">
       </div>
-      <button id="closeShareBtn">
-        <img src="/images/icon-share.svg" alt="Close Share">
-      </button>
     </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
